@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import clear from "../images/clear.png";
+import clouds from "../images/clouds.png";
+import rain from "../images/rain.png";
+import drizzle from "../images/drizzle.png";
+import mist from "../images/mist.png";
+import wind from "../images/wind.png";
+import humidity from "../images/humidity.png";
 
 const apiKey = "17d705c3dde0852cbc7e776fb8fbc222";
 const apiUrl =
@@ -28,17 +35,17 @@ const App = () => {
   const getWeatherIcon = (condition) => {
     switch (condition) {
       case "Clear":
-        return "images/clear.png";
+        return clear;
       case "Clouds":
-        return "images/clouds.png";
+        return clouds;
       case "Rain":
-        return "images/rain.png";
+        return rain;
       case "Drizzle":
-        return "images/drizzle.png";
+        return drizzle;
       case "Mist":
-        return "images/mist.png";
+        return mist;
       default:
-        return "images/clear.png";
+        return clear;
     }
   };
 
@@ -81,20 +88,12 @@ const App = () => {
             </div>
             <div className="details bg-[#c4e2ff] rounded-3xl p-4 flex justify-around">
               <div className="col flex flex-col items-center">
-                <img
-                  src="images/humidity.png"
-                  alt="Humidity Icon"
-                  className="w-12 mb-2"
-                />
+                <img src={humidity} alt="" className="w-12 mb-2" />
                 <p className="humidity text-xl">{weatherData.main.humidity}%</p>
                 <h3>Humidity</h3>
               </div>
               <div className="col flex flex-col items-center">
-                <img
-                  src="images/wind.png"
-                  alt="Wind Icon"
-                  className="w-12 mb-2"
-                />
+                <img src={wind} alt="" className="w-12 mb-2" />
                 <p className="wind text-xl">{weatherData.wind.speed} km/h</p>
                 <h3>Wind Speed</h3>
               </div>
