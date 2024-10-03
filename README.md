@@ -3,7 +3,7 @@
 This weather app provides real-time weather updates, including temperature, humidity, and wind speed for any city. It features dynamic weather icons and a responsive design for an optimal user experience.
 
 **Code Output:**
-Please click [here](https://sushilkumar567.github.io/4-weather-app/) to view the live code output.
+Please click [here](https://sushilkumar567.github.io/04-weather-app/) to view the live code output.
 
 ## Key Highlights:
 
